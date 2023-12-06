@@ -8,10 +8,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #f1f1f1;
 
 }
@@ -53,9 +53,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     max-width: 70vh;
     margin: 24px 0;
+    font-weight: 500;
 }
 
 .socialButtons {
@@ -103,7 +104,7 @@ body {
   }
   
   .social-btn:hover {
-    width: 170px;
+    width: 190px;
     border-radius: 5px;
   }
   
@@ -112,20 +113,12 @@ body {
     width: 100%;
   }
   
-  #twitter svg {
+  #behance svg {
     fill: var(--azul-twitter);
   }
   
   #linkedin svg {
     fill: var(--azul-linkedin);
-  }
-
-  .content {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 50px;
-    margin: 24px 0;
-    justify-content: center;
   }
 
   .card {
@@ -157,6 +150,8 @@ body {
    
    .card-info {
     position: relative;
+    display: flex;
+    flex-direction: column;
     z-index: 3;
     color: #f5f5f5;
     opacity: 0;
@@ -200,8 +195,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--azul-twitter);
-    background: linear-gradient(to bottom, var(--azul-twitter), var(--azul-twitter));
     overflow: hidden;
    }
 
@@ -231,4 +224,23 @@ body {
     background: var(--azul-linkedin);
     color: #f5f5f5;
    }
-  
+
+   @media screen and (max-width: 715px) {
+    .content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 50px;
+      margin: 24px 0;
+      justify-content: center;
+    }    
+   }
+   
+   @media screen and (min-width: 716px) {
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 50px;
+      margin: 24px 0;
+      justify-content: center;
+    }
+   }
