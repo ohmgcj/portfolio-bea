@@ -17,3 +17,12 @@ function redirect() {
         '_blank'
     ) 
 }
+
+document.getElementById('redirectBehance').addEventListener('click', redirect);
+
+function redirect() { 
+    window.open(
+        'https://www.behance.net/gallery/155137151/Criacao-de-marca-pessoal',
+        '_blank'
+    ) 
+}
