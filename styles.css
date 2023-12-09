@@ -177,16 +177,27 @@ body {
     opacity: 0;
     transform: translateY(20%);
     transition: 0.2s;
-    background-color: #3333336b;
+    background-color: #3333339d;
     border-radius: 15px;
     padding: 10px;
     width: 100%;
    }
    
    /*Text*/
+   .info-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
    .text-title {
     font-size: 1.5rem;
     font-weight: 500;
+   }
+
+   .text-year {
+    color: var(--principal-branco);
+    opacity: 0.8;
    }
    
    .text-body {

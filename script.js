@@ -1,24 +1,22 @@
-document.getElementById('linkedin').addEventListener('click', redirect);
+document.getElementById('linkedin').addEventListener('click', redirectLinkedin);
 
-function redirect() { 
+document.getElementById('behance').addEventListener('click', redirectBehance);
+
+document.getElementById('redirectBehance').addEventListener('click', redirect);
+
+function redirectLinkedin() { 
     window.open(
         'https://www.linkedin.com/in/beatrizparente-/',
         '_blank'
     ) 
 }
 
-/* Behance CLICK */
-
-document.getElementById('behance').addEventListener('click', redirect);
-
-function redirect() { 
+function redirectBehance() { 
     window.open(
         'https://www.behance.net/beatrizparente3',
         '_blank'
     ) 
 }
-
-document.getElementById('redirectBehance').addEventListener('click', redirect);
 
 function redirect() { 
     window.open(
